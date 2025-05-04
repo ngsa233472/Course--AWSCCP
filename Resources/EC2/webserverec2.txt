@@ -1,0 +1,12 @@
+sudo yum update -y
+sudo yum install -y httpd
+sudo systemctl start httpd
+sudo systemctl enable httpd
+sudo nano /var/www/html/index.html
+
+<!DOCTYPE html>
+<html>
+<body>
+<h1>This EC2 Instance is up and running!</h1>
+</body>
+</html>
